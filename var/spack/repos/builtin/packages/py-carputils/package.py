@@ -54,7 +54,7 @@ class PyCarputils(PythonPackage):
         depends_on("py-numpy@1.14.5:1.19.3", when="^python@3.6", type=("build", "run"))
         depends_on("py-numpy@1.13.3:1.17.3", when="^python@3.5", type=("build", "run"))
 
-        depends_on("py-tables@3.9:")
+        depends_on("py-tables@3.9:", type=("build", "run"))
         depends_on("py-tables@3.6.1", when="^python@:3.8", type=("build", "run"))
 
         depends_on("py-pandas", type=("build", "run"))
