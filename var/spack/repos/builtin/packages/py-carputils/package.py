@@ -70,8 +70,7 @@ class PyCarputils(PythonPackage):
         depends_on("py-six@1.14.0", when="^python@:3.11", type=("build", "run"))
 
         depends_on("py-matplotlib", type=("build", "run"))
-        depends_on("py-matplotlib@:3.7", when="^python@3.8:3.11", type=("build", "run"))
-        depends_on("py-matplotlib@:2.3.3", when="^python@:3.7", type=("build", "run"))
+        depends_on("py-matplotlib@:3.7", when="^python@:3.11", type=("build", "run"))
 
     with when("@:oc15.0"):
         # Historical dependencies
