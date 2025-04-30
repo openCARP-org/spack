@@ -39,6 +39,7 @@ class PyCarputils(PythonPackage):
         depends_on("py-common@0.1.2", type=("build", "run"))
         depends_on("py-ruamel-yaml@0.17.4:", type=("build", "run"))
         depends_on("py-pydoe@0.3.8", type=("build", "run"))
+        depends_on("py-setuptools@41.6.0:", type=("build", "run"))
 
         depends_on("py-scipy@1.11:", type=("build", "run"))
         depends_on("py-scipy@1.11", when="^python@3.9:3.11", type=("build", "run"))
@@ -62,9 +63,6 @@ class PyCarputils(PythonPackage):
 
         depends_on("py-python-dateutil", type=("build", "run"))
         depends_on("py-python-dateutil@2.8.1", when="^python@:3.9", type=("build", "run"))
-
-        depends_on("py-setuptools", type=("build", "run"))
-        depends_on("py-setuptools@41.6.0", when="^python@:3.11", type=("build", "run"))
 
         depends_on("py-six@1.16", when="^python@3.12:", type=("build", "run"))
         depends_on("py-six@1.14.0", when="^python@:3.11", type=("build", "run"))
